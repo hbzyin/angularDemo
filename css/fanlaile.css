@@ -1,0 +1,41 @@
+body{
+    font-size:14px;
+    font-family: 'SimHei' !important;
+    margin: 50px 0 100px 0;
+}
+.start{
+    margin-top:150px;
+    font-size:8em;
+}
+
+.align-center{
+    position: fixed;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    text-align:center;
+}
+
+/*搜索*/
+.search {
+    margin-top:20px;
+}
+/*价格*/
+.price {
+    color: #f00;
+    padding-top: 5px;
+    font-size: 1.2em;
+}
+
+
+
+
+/*订单中心*/
+.order-table>tbody>tr>td{
+    vertical-align: middle;
+}
+
+body{
+    position: relative;
+    overflow-x: hidden;
+}

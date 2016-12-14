@@ -1,0 +1,70 @@
+
+<div data-role="page" ng-controller="detailCtr">
+  <div data-role="header" data-position="fixed">
+    <a href="#" data-rel="back" data-icon="back" data-iconpos="notext">返回</a>
+    <h2>菜单详情</h2>
+    <a href="#" data-rel="forward" data-icon="forward" data-iconpos="notext">返回</a><br/>
+    <div style="text-align: right">
+      <button ng-click="jump('order.html')" data-inline="true"><a href="#">立即订餐</a></button>
+      <button ng-click="jump('main.html')"  data-inline="true"><a href="#">我再看看</a></button>
+    </div>
+  </div>
+    <div class="ui-content">
+        <h3>{{dish.name}}</h3>
+        <img ng-src="../img/{{dish.img_lg}}" width="100%">
+        <p>{{dish.material}}</p>
+        <p>{{dish.detail}}</p>
+        <div >
+            {{dish.price | currency:'￥'}}
+        </div>
+    </div>
+
+  <div data-role="footer" data-position="fixed">
+    <div data-role="navbar">
+      <ul>
+        <li ng-click="jump('../index.html')"><a href="#" data-icon="home">首页</a></li>
+        <li><a href="myorder.html" data-icon="user">用户中心</a></li>
+        <li ng-click="jump('main.html')"><a href="#" data-icon="star">起始页</a></li>
+      </ul>
+    </div>
+  </div>
+    <!--<div ng-include=" 'tpl/include/footer.html' "></div>-->
+</div>
+
+
+<!--
+<div ng-include=" 'tpl/include/header.html' "></div>
+
+<div class="container">
+    <ul class="breadcrumb">
+        <li><a href="#main">首页</a></li>
+        <li>详情</li>
+    </ul>
+
+    <div class="panel panel-default">
+        <div class="panel-body">
+            <div class="page-header">
+                <h3>{{dish.name}}</h3>
+            </div>
+            <div class="text-center">
+                <img ng-src="img/{{dish.img_lg}}" class="img-responsive">
+            </div>
+            <div class="text-justify well">
+                <p class="lead">{{dish.material}}</p>
+                <p>{{dish.detail}}</p>
+                <div class="price text-success">{{dish.price | currency:'￥'}}</div>
+            </div>
+        </div>
+        <div class="panel-footer">
+            <div class="text-right">
+                <button type="button" class="btn btn-success" ng-click="jump('/order/'+dish.did)">我要订餐</button>
+                <button type="button" class="btn btn-warning" ng-click="jump('/main')">我再看看</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<br><br><br>
+
+
+<div ng-include=" 'tpl/include/footer.html' "></div>-->

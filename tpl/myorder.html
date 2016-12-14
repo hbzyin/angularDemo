@@ -1,0 +1,76 @@
+<div data-role="page">
+  <div data-role="header">
+        <a href="#" data-rel="back" data-icon="back" data-iconpos="notext">返回</a>
+        <h2>我的订单</h2>
+        <a href="#" data-rel="forward" data-icon="forward" data-iconpos="notext">返回</a>
+  </div>
+  <div class="ui-content">
+        <table data-role=table data-mode="columntoggle">
+            <thead>
+            <tr>
+                <th>编号</th>
+                <th>菜品</th>
+                <th>下单时间</th>
+                <th>联系人</th>
+            </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td><h2>鱼香肉丝盖浇饭</h2></td>
+                    <td><p>2015-04-04</p></td>
+                    <td><p>小虾</p></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td><h2>小炒肉营养套餐</h2></td>
+                    <td><p>2016-08-12</p></td>
+                    <td><p>小虾</p></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+  <div data-role="footer" data-position="fixed">
+    <div data-role="navbar">
+      <ul>
+        <li ng-click="jump('../index.html')"><a href="#" data-icon="home">首页</a></li>
+        <li><a href="myorder.html" data-icon="user">用户中心</a></li>
+        <li ng-click="jump('main.html')"><a href="main.html" data-icon="star">菜单页</a></li>
+      </ul>
+    </div>
+  </div>
+
+</div>
+
+<!--
+<div ng-include=" 'tpl/include/header.html' "></div>
+
+<div class="container">
+    <h3 class="text-center">我的订单</h3>
+    <div class="table-responsive">
+        <table class="table table-hover table-striped table-condensed order-table">
+            <thead>
+            <tr>
+                <th>编号</th>
+                <th>菜品</th>
+                <th>下单时间</th>
+                <th>联系人</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr ng-repeat="o in orderList">
+                <td>{{o.oid}}</td>
+                <td>
+                    <a href="#/detail/{{o.did}}"><img ng-src="img/{{o.img_sm}}"/></a></td>
+                <td>{{o.order_time| date :'yyyy-MM-dd HH:mm'}}</td>
+                <td>{{o.user_name}}</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<br><br><br>
+
+
+<div ng-include=" 'tpl/include/footer.html' "></div>-->
